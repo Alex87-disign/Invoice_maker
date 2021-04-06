@@ -22,6 +22,8 @@ const data = document.querySelector('.data'),
     btn.addEventListener('click', (e) => {
         e.preventDefault();
         mainForm.remove();
+        document.body.style.backgroundColor ='white';
+        
 
         let shipp = Number(shipping.value);
         let pricee = Number(price.value);
