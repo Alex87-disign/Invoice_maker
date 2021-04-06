@@ -1,8 +1,9 @@
 'use strict'
+document.addEventListener('DOMContentLoaded', () => {
 
 const input = document.querySelectorAll('input'),
     btn = document.querySelector('button'),
-    mainForm = document.querySelector('.mainForm'),
+    mainForm = document.querySelector('.mainform'),
     invoice = document.querySelector('.invoice');
 
 const data = document.querySelector('.data'),
@@ -20,7 +21,7 @@ const data = document.querySelector('.data'),
 
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        mainForm.style.display ='none';
+        mainForm.remove();
 
         let shipp = Number(shipping.value);
         let pricee = Number(price.value);
@@ -319,4 +320,5 @@ const data = document.querySelector('.data'),
 
     
     })
+})
 
