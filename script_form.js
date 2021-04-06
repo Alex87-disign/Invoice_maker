@@ -20,13 +20,13 @@ const data = document.querySelector('.data'),
 
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        
+        mainForm.style.display ='none';
 
         let shipp = Number(shipping.value);
         let pricee = Number(price.value);
         let total =pricee+shipp;
 
-       
+        
 
             invoice.innerHTML = `<style>
             @page {
@@ -313,8 +313,8 @@ const data = document.querySelector('.data'),
         </div>
             
         `
-        mainForm.remove()
-
+        
+        
 
 
     
